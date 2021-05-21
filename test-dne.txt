@@ -1,0 +1,17 @@
+# TEST TARGET DOES NOT EXIST (ie G drive is in transit)
+
+# mirror
+\\ds1019\code -> m:\code
+\\ds1019\data -> m:\data
+\\ds1019\media -> m:\media
+\\ds1019\photo -> m:\photo
+\\ds1019\download -> m:\download
+
+# EXTERNAL USB MIRROR FOR OFFSITE
+\\ds1019\code -> q:\code
+\\ds1019\data -> q:\data
+\\ds1019\media -> q:\media
+\\ds1019\photo -> q:\photo
+\\ds1019\download -> q:\download
+
+

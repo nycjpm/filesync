@@ -1,0 +1,50 @@
+
+# FIRST SOME CLEANUP
+
+# clear some crap directories from old copies
+#\\ds1019\data\empty -> g:\d-2018-03-15\_download\dir to clear
+
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\ableton_live_trial_9.1_64
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\Adobe Photoshop Lightroom 2.1 RC
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\buttons
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\Camera_Raw_4_6
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\encog-encog-dotnet-core-3.1-0c27aa2
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\smartgit-win32-setup-jre-17_0_5
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\smartgit-win32-setup-jre-6_5_7
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\smartgit-win32-setup-jre-8_0_4
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\wordpress-2.8.6
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\wordpress-3.3.1
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\Xamarin App Icons and Launch Images
+\\ds1019\data\empty -> g:\d-2018-03-15\_download\_Windows10
+
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\ableton_live_trial_9.1_64
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\Adobe Photoshop Lightroom 2.1 RC
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\buttons
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\Camera_Raw_4_6
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\encog-encog-dotnet-core-3.1-0c27aa2
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\smartgit-win32-setup-jre-17_0_5
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\smartgit-win32-setup-jre-6_5_7
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\smartgit-win32-setup-jre-8_0_4
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\wordpress-2.8.6
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\wordpress-3.3.1
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\Xamarin App Icons and Launch Images
+\\ds1019\data\empty -> g:\d-2019-07-25\_download\_Windows10
+
+
+# NOW delete thumbnails
+#\\ds1019\photo\_nikon -> g:\d-2018-03-15\_nikon
+#\\ds1019\photo\_nikon -> g:\d-2019-06-09\_nikon
+#\\ds1019\photo\_nikon -> g:\d-2019-07-25\_nikon
+
+
+# NOW COPY THE OLD waybacks
+
+g:\d-2018-03-15 -> \\ds1019\z-wayback\data\d-2018-03-15 -> echo:w
+g:\d-2019-06-09 -> \\ds1019\z-wayback\data\d-2019-06-09 -> echo:w
+g:\d-2019-07-25 -> \\ds1019\z-wayback\data\d-2019-07-25 -> echo:w
+
+g:\m-2018-03-15 -> \\ds1019\z-wayback\media\m-2018-03-15 -> echo:w
+g:\m-2019-06-09 -> \\ds1019\z-wayback\media\m-2019-06-09 -> echo:w
+g:\m-2019-07-25 -> \\ds1019\z-wayback\media\m-2019-07-25 -> echo:w
+g:\m-2020-04-30 -> \\ds1019\z-wayback\media\m-2020-04-30 -> echo:w
+

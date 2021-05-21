@@ -1,0 +1,32 @@
+# format:  FROM PATH -> TO PATH -> option:val option:val (token is " -> ")
+
+# EXTERNAL USB MIRROR FOR OFFSITE
+\\ds1019\code -> g:\code
+\\ds1019\data -> g:\data
+\\ds1019\media -> g:\media
+\\ds1019\photo -> g:\photo
+\\ds1019\download -> g:\download
+
+# mirror
+\\ds1019\code -> m:\code
+\\ds1019\data -> m:\data
+\\ds1019\media -> m:\media
+\\ds1019\photo -> m:\photo
+\\ds1019\download -> m:\download
+
+# san wayback mirrors
+\\ds1019\download -> \\ds1019\z-wayback\download -> op:wayback echo:w
+\\ds1019\code -> \\ds1019\z-wayback\code -> op:wayback echo:w
+\\ds1019\data -> \\ds1019\z-wayback\data -> op:wayback echo:w
+\\ds1019\media -> \\ds1019\z-wayback\media -> op:wayback echo:w
+\\ds1019\photo -> \\ds1019\z-wayback\photo -> op:wayback echo:w
+
+# wayback cleanups
+\\ds1019\download -> \\ds1019\z-wayback\download -> op:purge retain:m3,q4,y10
+\\ds1019\code -> \\ds1019\z-wayback\code -> op:purge retain:m3,q4,y10
+\\ds1019\data -> \\ds1019\z-wayback\data -> op:purge retain:m3,q4,y10
+\\ds1019\media -> \\ds1019\z-wayback\media -> op:purge retain:m3,q4,y10
+\\ds1019\photo -> \\ds1019\z-wayback\photo -> op:purge retain:m3,q4,y10
+
+
+
