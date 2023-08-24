@@ -237,7 +237,11 @@ namespace filesync
                 var fif = new FileInfo(from);
                 var fit = new FileInfo(to);
 
-                var different = fif.Length != fit.Length || fif.LastWriteTime != fit.LastWriteTime;
+                //
+                // FAT and exFAT have 2s granularity on Modified dates.  Therefore, need to allow +/- 3s in comparisons.
+                // https://superuser.com/questions/1685706/timestamp-changes-when-copying-file-to-exfat-drive
+                //
+                var different = fif.Length != fit.Length || Math.Abs((fif.LastWriteTime - fit.LastWriteTime).TotalSeconds) > 4;
 
                 if (!different)
                 {
