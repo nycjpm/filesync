@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.IO.MemoryMappedFiles;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Reflection;
-using System.Runtime.InteropServices;
 
 namespace filesync
 {
@@ -15,7 +12,7 @@ namespace filesync
     {
         static Dictionary<string, string> inputoptions;
 
-        static HashSet<string> validOptions = new HashSet<string>("from,to,hash,echo,prompt,op,manifest,threads,retries".Split(','));
+        static HashSet<string> validOptions = new HashSet<string>("from,to,hash,echo,prompt,op,manifest,threads,retries,write".Split(','));
 
         //static string slug = "asof-";
 
@@ -47,7 +44,7 @@ namespace filesync
 
             if (!inputoptions.ContainsKey("from") || !inputoptions.ContainsKey("to"))
             {
-                if (!inputoptions.ContainsKey("manifest"))
+                if (!inputoptions.ContainsKey("manifest") && inputoptions["op"] != "fixfolderdates")
                 {
                     inputoptions["op"] = "readme";
                     inputoptions["prompt"] = "true";
@@ -97,12 +94,18 @@ namespace filesync
                 inputoptions["retries"] = "on";
             }
 
+            if (!inputoptions.ContainsKey("write"))
+            {
+                inputoptions["write"] = "off";
+            }
+
             // conform case and trim
             inputoptions["hash"] = inputoptions["hash"].ToLower().Trim();
             inputoptions["prompt"] = inputoptions["prompt"].ToLower().Trim();
             inputoptions["echo"] = inputoptions["echo"].ToLower().Trim();
             inputoptions["retries"] = inputoptions["retries"].ToLower().Trim();
-         
+            inputoptions["write"] = inputoptions["write"].ToLower().Trim();
+
 
             //
             // README
@@ -125,15 +128,32 @@ namespace filesync
 
             var maps = new List<Mapping>();
 
-            if (inputoptions["op"] == "waybackrecover")
+            if (inputoptions.ContainsKey("op") && inputoptions["op"] == "fixfolderdates")
             {
-                if (!inputoptions.ContainsKey("manifest"))
+
+                if (!inputoptions.ContainsKey("from"))
                 {
-                    Console.WriteLine($"MANIFEST REQUIRED for op:waybackrecover");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine($"FROM PATH REQUIRED for op:fixfolderdates");
+                    Usage();
                     return;
                 }
-                
-                WaybackRecover.ProcessManifest(inputoptions["manifest"], inputoptions);
+
+                if (!Util.ValidatePath(inputoptions["from"], inputoptions["write"] == "on"))
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine($"PATH NOT FOUND: {inputoptions["from"]}");
+                    Usage();
+                    return;
+                }
+
+                ConformFolderDates.Conform(inputoptions["from"], inputoptions);
+
+                if (inputoptions["prompt"] == "true")
+                {
+                    var c = Console.ReadKey();
+                }
+
                 return;
             }
 
@@ -147,7 +167,7 @@ namespace filesync
                     return;
                 }
 
-                if (!inputoptions.ContainsKey("to") || !Util.ValidatePath(inputoptions["to"], true))
+                if (!inputoptions.ContainsKey("to") || !Util.ValidatePath(inputoptions["to"], inputoptions["write"] == "on"))
                 {
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine($"INVALID TO PATH: [to:{inputoptions["to"]}");
@@ -204,29 +224,6 @@ namespace filesync
                 }
             }
 
-            ////////// validate each mapping
-            ////////foreach (var map in maps)
-            ////////{
-            ////////    //
-            ////////    // validate paths
-            ////////    //
-            ////////    if (!Util.ValidatePath(map.fromPath))
-            ////////    {
-            ////////        Console.ForegroundColor = ConsoleColor.White;
-            ////////        Console.WriteLine($"INVALID FROM PATH: {map.fromPath}");
-            ////////        Usage();
-            ////////        return;
-            ////////    }
-
-            ////////    if (!Util.ValidatePath(map.toPath, true))
-            ////////    {
-            ////////        Console.ForegroundColor = ConsoleColor.White;
-            ////////        Console.WriteLine($"INVALID TO PATH: {map.toPath}");
-            ////////        Usage();
-            ////////        return;
-            ////////    }
-            ////////}
-
             // batch timings
             var bwatch = new System.Diagnostics.Stopwatch();
             bwatch.Start();
@@ -249,7 +246,7 @@ namespace filesync
                     continue;
                 }
 
-                if (!Util.ValidatePath(map.toPath, true))
+                if (!Util.ValidatePath(map.toPath, inputoptions["write"] == "on"))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"");

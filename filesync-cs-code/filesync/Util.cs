@@ -75,7 +75,7 @@
             {
                 Directory.CreateDirectory(path);
             }
-            catch (Exception ex)
+            catch
             {
                 return false;
             }

@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 
 namespace filesync
 {
-    // xxx 
-
     public class Mapping
     {
         public string fromPath { get; set; }
@@ -33,6 +31,8 @@ namespace filesync
 
         public static void SyncFolder(Mapping mapping, Dictionary<string, string> options)
         {
+            var proformaTag = options["write"] != "on" ? "would have" : string.Empty;
+
             // threads options from command line
             var paralleloptions = new ParallelOptions { };
             if (options.ContainsKey("threads"))
@@ -43,10 +43,8 @@ namespace filesync
 
             // need MERGE code for files and folers
 
-            // need COMPARE ONLY mode
-
-            // create target if not exists
-            Util.ValidatePath(mapping.toPath, true);
+            // create target if not exists (only create in write mode)
+            Util.ValidatePath(mapping.toPath, options["write"] == "on");
 
             string[] rawf;
 
@@ -135,11 +133,15 @@ namespace filesync
                 var toDir = new DirectoryInfo(mapping.toPath);
                 if (Math.Abs((fromDir.LastWriteTimeUtc - toDir.LastWriteTimeUtc).TotalSeconds) > 5)
                 {
-                    toDir.LastWriteTimeUtc = fromDir.LastWriteTimeUtc;
+                    if (options["write"] == "on")
+                    {
+                        toDir.LastWriteTimeUtc = fromDir.LastWriteTimeUtc;
+                    }
+
                     if (options.ContainsKey("echo") && options["echo"].Split(',').Contains("w"))
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine($"folder timestamp updated {fromDir.LastWriteTimeUtc.ToString()}: " + mapping.toPath);
+                        Console.WriteLine($"folder timestamp {proformaTag} updated {fromDir.LastWriteTimeUtc.ToString()}: " + mapping.toPath);
                     }
                 }
             }
@@ -148,6 +150,8 @@ namespace filesync
 
         public static void DeleteFolder(string to, Dictionary<string, string> options)
         {
+            var proformaTag = options["write"] != "on" ? "would have" : string.Empty;
+
             bool echowrite = false;
 
             if (options.ContainsKey("echo"))
@@ -159,7 +163,7 @@ namespace filesync
             if (echowrite)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("deleted folder: " + to);
+                Console.WriteLine($"{proformaTag} deleted folder: " + to);
             }
 
             double retryms = 5;
@@ -167,9 +171,13 @@ namespace filesync
             {
                 try
                 {
-                    var dir = new System.IO.DirectoryInfo(to);
-                    SetDirAttributesNormal(dir);
-                    dir.Delete(true);
+                    if (options["write"] == "on")
+                    {
+                        var dir = new System.IO.DirectoryInfo(to);
+                        SetDirAttributesNormal(dir);
+                        dir.Delete(true);
+                    }
+
                     return;
                 }
                 catch (Exception ex)
@@ -198,6 +206,8 @@ namespace filesync
 
         static void DeleteFile(string to, Dictionary<string, string> options)
         {
+            var proformaTag = options["write"] != "on" ? "would have" : string.Empty;
+
             bool echowrite = false;
 
             if (options.ContainsKey("echo"))
@@ -209,7 +219,7 @@ namespace filesync
             if (echowrite)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("deleted file: " + to);
+                Console.WriteLine($"{proformaTag} deleted file: " + to);
             }
 
             double retryms = 5;
@@ -217,7 +227,11 @@ namespace filesync
             {
                 try
                 {
-                    File.Delete(to);
+                    if (options["write"] == "on")
+                    {
+                        File.Delete(to);
+                    }
+
                     return;
                 }
                 catch (Exception ex)
@@ -246,6 +260,8 @@ namespace filesync
 
         static void SyncFile(string from, string to, Dictionary<string, string> options)
         {
+            var proformaTag = options["write"] != "on" ? "would have" : string.Empty;
+                
             var t = new System.Diagnostics.Stopwatch();
             t.Start();
 
@@ -309,11 +325,15 @@ namespace filesync
 
                 try
                 {
-                    File.Copy(from, to, true);
+                    if (options["write"] == "on")
+                    {
+                        File.Copy(from, to, true);
+                    }
+
                     if (echowrite)
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine((missing ? "copied: " : "replaced: ") + to + " (" + t.Elapsed.TotalMilliseconds.ToString("0") + " ms)");
+                        Console.WriteLine((missing ? $"{proformaTag} copied: " : $"{proformaTag} replaced: ") + to + " (" + t.Elapsed.TotalMilliseconds.ToString("0") + " ms)");
                     }
 
                     return;
