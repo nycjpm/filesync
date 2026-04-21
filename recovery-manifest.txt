@@ -1,0 +1,403 @@
+
+C:\Users\john>c:\_scratch\___filesync\filesync threads:8 retries:off manifest:c:\_scratch\___filesync\validate.txt
+
+Start processing: \\newnas\code -> \\newnas\code
+Done processing: \\newnas\code -> \\newnas\code
+Elapsed: 517 Seconds (00H:08M:36S)
+
+Start processing: \\newnas\data -> \\newnas\data
+Done processing: \\newnas\data -> \\newnas\data
+Elapsed: 10 Seconds (00H:00M:09S)
+
+Start processing: \\newnas\media -> \\newnas\media
+Done processing: \\newnas\media -> \\newnas\media
+Elapsed: 14 Seconds (00H:00M:14S)
+
+Start processing: \\newnas\photo -> \\newnas\photo
+Done processing: \\newnas\photo -> \\newnas\photo
+Elapsed: 34 Seconds (00H:00M:33S)
+
+Start processing: \\newnas\download -> \\newnas\download
+Done processing: \\newnas\download -> \\newnas\download
+Elapsed: 3 Seconds (00H:00M:02S)
+
+Start processing: \\newnas\video-source -> \\newnas\video-source
+Done processing: \\newnas\video-source -> \\newnas\video-source
+Elapsed:  Seconds (00H:00M:00S)
+
+Start processing: \\newnas\video-edit -> \\newnas\video-edit
+Done processing: \\newnas\video-edit -> \\newnas\video-edit
+Elapsed:  Seconds (00H:00M:00S)
+
+Start processing: \\newnas\z-wayback\code\asof-2020-12 -> \\newnas\z-wayback\code\asof-2020-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2020-12\mekka\v1mekka\mekka_Local\images\stop.gif
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2020-12\mekka\v3mekka\mekka3\mekka3_Local\content\_vti_cnf\view.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2020-12\mekka\v1mekka\mekka_Local\_ScriptLibrary\RSNAVBAR.ASP
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2020-12\mekka\v1mekka\mekka_Local\_ScriptLibrary\RSNAVBAR.HTM
+Done processing: \\newnas\z-wayback\code\asof-2020-12 -> \\newnas\z-wayback\code\asof-2020-12
+Elapsed: 66 Seconds (00H:01M:05S)
+
+Start processing: \\newnas\z-wayback\code\asof-2022-12 -> \\newnas\z-wayback\code\asof-2022-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\mekka\v1mekka\mekka_Local\_ScriptLibrary\LABEL.ASP
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\mekka\v1mekka\mekka_Local\_ScriptLibrary\EVENTMGR.HTM
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\mekka\v2mekka\mekka_Local\common\_vti_cnf\util_form_entry.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\mekka\v2mekka\mekka_Local\common\_vti_cnf\util_asp.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\mekka\v2mekka\mekka_Local\common\_vti_cnf\topnav.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\mekka\v2mekka\mekka_Local\common\_vti_cnf\std_head.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\mekka\v2mekka\mekka_Local\common\_vti_cnf\util_form_search.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\d2\c2a9491a5af753fa37c61866e0c5258a456b46
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\d2\f555b69b727b416ec1a9fade7ddc555b773b4e
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\db\4f449944797d58d9867437401bcdd8b9e9716b
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\e8\abf0f0e1d640b0119caf5621de39ed8c4b43af
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\f1\18ac6b2aa6469c5ee59d6d8d0eb9e2a19037dc
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\e8\e063d0287bd2623f0852b4238e7ab890bb2843
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\f1\4f76d446f9f2f38c0d6d8e0112d1e395c5d8ba
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2022-12\__52week-program\app code\wellship-app\.git\objects\fe\c6efaa8f4646c38e68d57b9d797d7ee6d096ba
+Done processing: \\newnas\z-wayback\code\asof-2022-12 -> \\newnas\z-wayback\code\asof-2022-12
+Elapsed: 69 Seconds (00H:01M:08S)
+
+Start processing: \\newnas\z-wayback\code\asof-2023-12 -> \\newnas\z-wayback\code\asof-2023-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_craps\CrapsMonteCarlo\.git\objects\28\d768361cf6aef86fb6e77b016976fb8ae5d324
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_craps\CrapsMonteCarlo\.git\objects\2c\a0b5e022d1bab8f0e914dd5b6f27f20457dfdb
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_craps\CrapsMonteCarlo\.git\objects\32\c239c7788dcb39e6ffc51999233bc1244a7725
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_craps\CrapsMonteCarlo\.git\objects\2d\0432463cfca77fb61acadd6d4ea52faf20bd3f
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_craps\CrapsMonteCarlo\.git\objects\2d\7ddfa1efab2cf0c8e93e854e38c29700d605d4
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_craps\CrapsMonteCarlo\.git\objects\3a\34caac5460891f688dabe54e80e9f82b569373
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_craps\CrapsMonteCarlo\.git\objects\38\83bacd3036a5b47fd93cdab5c2185819a64d8c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\e7\941b8a8af53bc2bb767ba581cffd3bfe0e7edf
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\e7\f0bf12ffd71d482dbc041288d16d945351a342
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\da\7e5a65c869d033e5bde7671746867712a8551a
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\da\c664fd75b4bf9d2f9385ee381ab47eb9771192
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\da\e617c004898dfd4e9d400d7b184b9acd71ce5c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\fd\2b49b9207fc437460f3d760b8ef8c4ff09ccac
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\f4\8315e0b08909321b5bd4713c429c2d0842d4ca
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\fd\debc8bb533df2754b513f882bffb81dccba3db
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\d2\b2afd8824cedf36627f8277614e6d2119554e6
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\c5\98684ffed570aba278349d3cff6dd50faddd3d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\d2\b2afd8824cedf36627f8277614e6d2119554e6
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\da\7e5a65c869d033e5bde7671746867712a8551a
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\da\c664fd75b4bf9d2f9385ee381ab47eb9771192
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\da\e617c004898dfd4e9d400d7b184b9acd71ce5c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\e5\7910462b696a4437af0cc1e37dcf1601439931
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\e5\aa1f4da8d7019f8b8f155fbbed1a02d32aea06
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\f2\98a7be80982ebd538a05758a03bc827419d418
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\f2\eb1cffffcfbcb4899e76678f06b05800257cdb
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\f6\2bf60fa73f272a73f85fd6a2c7ceb5a0e89e64
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\fd\2b49b9207fc437460f3d760b8ef8c4ff09ccac
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2023-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\fd\debc8bb533df2754b513f882bffb81dccba3db
+Done processing: \\newnas\z-wayback\code\asof-2023-12 -> \\newnas\z-wayback\code\asof-2023-12
+Elapsed: 414 Seconds (00H:06M:53S)
+
+Start processing: \\newnas\z-wayback\code\asof-2024-12 -> \\newnas\z-wayback\code\asof-2024-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\6c\05a9776bd7cbae976fdcec7e3a254e93018279
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\6d\f805715561884414eb4f67a9b715057705d22c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\6c\8d1933e8f1a3dd70e99d2c21264660020dbb3d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\8a\ebd48c678ee9a6debcd3b9eb585c64f32b4989
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\90\47b9a836d7fd29b0505fb8deb1fd6bab050f38
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\92\15054fe9191bdd3ec210dc4fd8392d5f93d199
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\92\6925ce5fb647c8d7239e0588534f8f019f17c9
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\95\82a894f707345e872103e00719de3101a75ea5
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\95\9199cac53de066f53bbcebe50b837d57293596
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\8b\76f19fea3412eee160e8ad971d2c539b0a46b9
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\93\61c7265be4b8d39b86379a1e12681a153454df
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\99\ea149f08fe49a792da7a9334c6121c1f3501c2
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\9f\54e8fb5ce49ff608f5983c769f9b98667d86e0
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\7c\5b197787dcbf4435df32043074e3b7ddabf54f
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\7c\c82c07924d7199c47142b4fbf166b7ba89cb0b
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\a2\d4310f05b83d4fb5d75784a80440bfe9c91ec3
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\a8\6a1d70fd6945a62c8b22ff6871778ad9a2faf4
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\8b\76f19fea3412eee160e8ad971d2c539b0a46b9
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\8e\d3aae28a45ce74fc85911973965ce61933d32d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\92\15054fe9191bdd3ec210dc4fd8392d5f93d199
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\92\6925ce5fb647c8d7239e0588534f8f019f17c9
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\96\5871886c883fef67a2321fe21de850caddca06
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\7c\5b197787dcbf4435df32043074e3b7ddabf54f
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\7c\c82c07924d7199c47142b4fbf166b7ba89cb0b
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\83\deedf73197ee7316c48e1f38827883891dfdf2
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\8a\ebd48c678ee9a6debcd3b9eb585c64f32b4989
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\8e\d3aae28a45ce74fc85911973965ce61933d32d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\93\61c7265be4b8d39b86379a1e12681a153454df
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\96\5871886c883fef67a2321fe21de850caddca06
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\78\14ea24efb1226638b58bbf50f1769939812f37
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\78\3174507957898b473865cfdaada703d2b65747
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\78\d4593accb305fcdd03de268dbe54c9fdefa6d0
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\7c\5b197787dcbf4435df32043074e3b7ddabf54f
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\7c\c82c07924d7199c47142b4fbf166b7ba89cb0b
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\7f\092946956353be0d40d7289c2149bb8a56bbf0
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\7f\b5a4c171da192cc772be0c8a258dc83a7050ba
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\8a\ebd48c678ee9a6debcd3b9eb585c64f32b4989
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\8e\d3aae28a45ce74fc85911973965ce61933d32d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2024-12\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\93\61c7265be4b8d39b86379a1e12681a153454df
+Done processing: \\newnas\z-wayback\code\asof-2024-12 -> \\newnas\z-wayback\code\asof-2024-12
+Elapsed: 457 Seconds (00H:07M:36S)
+
+Start processing: \\newnas\z-wayback\code\asof-2025-03 -> \\newnas\z-wayback\code\asof-2025-03
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\56\19eb28c5a4f43c54182d071d127038660effd3
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\5c\c8a9cd5d26934cd5f41542ca424271c7396783
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\66\5e97c1d5eaf8efd70adab7749b3f63ac4f6c1d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\51\fd8ef481a04e63ef9803b6d043a9ae19b71c73
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\60\94fb2ba888bc65f23723c21abebade7e610871
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\60\d9a0140d9daf77f407b89548691722de56db4f
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\69\56988d80f37237028ba1110147a72267e203e3
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\69\c3e1ca6d50fafff66b7fbc915e0897e924548c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V3 SAFE\NflModeler\.git\objects\69\cd0347d8d893dcf98108a6fe34ec3e25306644
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\55\5902850b5faefe0d22214a6901c5d862f7ca45
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\39\bc23e96d3dd148b3debcda95780b0d52067e63
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\55\8e4a31ac86f073a2e401997c5ecfcd6adbbff1
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\55\d06d32156848b97aceafefd1b3366954f478e6
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\5c\c8a9cd5d26934cd5f41542ca424271c7396783
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\54\33224632f65ca321eec0bf9b2dd9203990d31d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\47\512542ec890f7658ebdd466a2c7c4ee4c8e0af
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\5f\1bfb41d5dce3b77214a344551309eabc59cca7
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\58\b3fe625ec4ab0aa6dfadb5dfed872621266094
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\4c\0133b90b9c8307ac7c1a1422fc98b15474782a
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\4c\87ac0d0c9fae1ed8a86d51d0a7b0b53b906b1d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\67\5fe9597e6e0d41d41da5fda2f1e39c159d7a09
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\67\61563a4503f0908ac06047ded747634e1114a8
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\60\94fb2ba888bc65f23723c21abebade7e610871
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\4e\44e68cc8b3cdad825762b5d00a44aa53ac3490
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\67\9d2e35315208c9b12905b26ad335b21c42e955
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\60\d9a0140d9daf77f407b89548691722de56db4f
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\4e\aa2a5871cb9e93fa068d9d7ce1d2156d24ffc8
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\4e\f898731f82238f307121126b2e7dc1b923802c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\6a\9fa6d16cebb739e56e2d5f1b12b3ee86e4f9a5
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\66\5e97c1d5eaf8efd70adab7749b3f63ac4f6c1d
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V2 SAFE\NflModeler\.git\objects\51\fd8ef481a04e63ef9803b6d043a9ae19b71c73
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\6f\96db4e309ceb1bc1fce0b57b5bcc0c27ee3643
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\6f\b0dcd28834b796490c54f6439906b02f3d7063
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\4f\b156dd8d9dd01cab88b4217e9b5f7275018201
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\69\56988d80f37237028ba1110147a72267e203e3
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V1 SAFE\NflModeler\.git\objects\6f\c2bb1689c77aaf833a3e1e3522cc6ae12ae16b
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\69\c3e1ca6d50fafff66b7fbc915e0897e924548c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\69\cd0347d8d893dcf98108a6fe34ec3e25306644
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\55\5902850b5faefe0d22214a6901c5d862f7ca45
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\55\8e4a31ac86f073a2e401997c5ecfcd6adbbff1
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\55\d06d32156848b97aceafefd1b3366954f478e6
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V4 SAFE\NflModeler\.git\objects\6d\f805715561884414eb4f67a9b715057705d22c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\58\b3fe625ec4ab0aa6dfadb5dfed872621266094
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\60\94fb2ba888bc65f23723c21abebade7e610871
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\60\d9a0140d9daf77f407b89548691722de56db4f
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\67\5fe9597e6e0d41d41da5fda2f1e39c159d7a09
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\67\61563a4503f0908ac06047ded747634e1114a8
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\67\9d2e35315208c9b12905b26ad335b21c42e955
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\69\56988d80f37237028ba1110147a72267e203e3
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\69\c3e1ca6d50fafff66b7fbc915e0897e924548c
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-03\_NFL Saved Versions\___NFL V5 SAFE\NflModeler\.git\objects\69\cd0347d8d893dcf98108a6fe34ec3e25306644
+Done processing: \\newnas\z-wayback\code\asof-2025-03 -> \\newnas\z-wayback\code\asof-2025-03
+Elapsed: 490 Seconds (00H:08M:10S)
+
+Start processing: \\newnas\z-wayback\code\asof-2025-06 -> \\newnas\z-wayback\code\asof-2025-06
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\code\asof-2025-06\lssl\lssl-model\MSSCCPRJ.SCC
+Done processing: \\newnas\z-wayback\code\asof-2025-06 -> \\newnas\z-wayback\code\asof-2025-06
+Elapsed: 497 Seconds (00H:08M:17S)
+
+Start processing: \\newnas\z-wayback\code\asof-2025-09 -> \\newnas\z-wayback\code\asof-2025-09
+Done processing: \\newnas\z-wayback\code\asof-2025-09 -> \\newnas\z-wayback\code\asof-2025-09
+Elapsed: 467 Seconds (00H:07M:46S)
+
+Start processing: \\newnas\z-wayback\code\asof-2025-10 -> \\newnas\z-wayback\code\asof-2025-10
+Done processing: \\newnas\z-wayback\code\asof-2025-10 -> \\newnas\z-wayback\code\asof-2025-10
+Elapsed: 468 Seconds (00H:07M:48S)
+
+Start processing: \\newnas\z-wayback\code\asof-2025-11 -> \\newnas\z-wayback\code\asof-2025-11
+Done processing: \\newnas\z-wayback\code\asof-2025-11 -> \\newnas\z-wayback\code\asof-2025-11
+Elapsed: 475 Seconds (00H:07M:55S)
+
+Start processing: \\newnas\z-wayback\code\asof-2025-12 -> \\newnas\z-wayback\code\asof-2025-12
+Done processing: \\newnas\z-wayback\code\asof-2025-12 -> \\newnas\z-wayback\code\asof-2025-12
+Elapsed: 465 Seconds (00H:07M:45S)
+
+Start processing: \\newnas\z-wayback\data\d-2018-03-15 -> \\newnas\z-wayback\data\d-2018-03-15
+Done processing: \\newnas\z-wayback\data\d-2018-03-15 -> \\newnas\z-wayback\data\d-2018-03-15
+Elapsed: 100 Seconds (00H:01M:40S)
+
+Start processing: \\newnas\z-wayback\data\d-2019-06-09 -> \\newnas\z-wayback\data\d-2019-06-09
+Done processing: \\newnas\z-wayback\data\d-2019-06-09 -> \\newnas\z-wayback\data\d-2019-06-09
+Elapsed: 83 Seconds (00H:01M:22S)
+
+Start processing: \\newnas\z-wayback\data\d-2019-07-25 -> \\newnas\z-wayback\data\d-2019-07-25
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\d-2019-07-25\jplinux-webdev\mekka3\mekka3\mekka3_Local\join\_vti_cnf\hosting.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\d-2019-07-25\jplinux-webdev\mekka3\mekka3\mekka3_Local\join\_vti_cnf\full.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\d-2019-07-25\pictures\photo (old)\Chantal.jpg
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\d-2019-07-25\pictures\photo (old)\chocolate factory west view.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\d-2019-07-25\pictures\photo (old)\corky chair 6x6 perky.jpg
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\d-2019-07-25\pictures\photo (old)\debbie fountain chicago.JPG
+Done processing: \\newnas\z-wayback\data\d-2019-07-25 -> \\newnas\z-wayback\data\d-2019-07-25
+Elapsed: 85 Seconds (00H:01M:25S)
+
+Start processing: \\newnas\z-wayback\data\asof-2020-12 -> \\newnas\z-wayback\data\asof-2020-12
+Done processing: \\newnas\z-wayback\data\asof-2020-12 -> \\newnas\z-wayback\data\asof-2020-12
+Elapsed: 11 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\data\asof-2022-12 -> \\newnas\z-wayback\data\asof-2022-12
+Done processing: \\newnas\z-wayback\data\asof-2022-12 -> \\newnas\z-wayback\data\asof-2022-12
+Elapsed: 11 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\data\asof-2023-12 -> \\newnas\z-wayback\data\asof-2023-12
+Done processing: \\newnas\z-wayback\data\asof-2023-12 -> \\newnas\z-wayback\data\asof-2023-12
+Elapsed: 11 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\data\asof-2024-12 -> \\newnas\z-wayback\data\asof-2024-12
+Done processing: \\newnas\z-wayback\data\asof-2024-12 -> \\newnas\z-wayback\data\asof-2024-12
+Elapsed: 10 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\data\asof-2025-03 -> \\newnas\z-wayback\data\asof-2025-03
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-03\jplinux-webdev\mekka3\mekka3\mekka3_Local\join\_vti_cnf\free.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-03\jplinux-webdev\mekka3\mekka3\mekka3_Local\join\_vti_cnf\full.asp.base
+Done processing: \\newnas\z-wayback\data\asof-2025-03 -> \\newnas\z-wayback\data\asof-2025-03
+Elapsed: 12 Seconds (00H:00M:11S)
+
+Start processing: \\newnas\z-wayback\data\asof-2025-06 -> \\newnas\z-wayback\data\asof-2025-06
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-06\jplinux-webdev\mekka3\mekka3\mekka3_Local\images\button-opinion.gif
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-06\jplinux-webdev\mekka3\mekka3\mekka3_Local\join\_vti_cnf\enter.asp.base
+Done processing: \\newnas\z-wayback\data\asof-2025-06 -> \\newnas\z-wayback\data\asof-2025-06
+Elapsed: 11 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\data\asof-2025-09 -> \\newnas\z-wayback\data\asof-2025-09
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-09\jplinux-webdev\mekka3\mekka3\mekka3_Local\join\_vti_cnf\basic.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-09\jplinux-webdev\mekka3\mekka3\mekka3_Local\images\file.gif
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-09\jplinux-webdev\mekka3\mekka3\mekka3_Local\images\first.gif
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-09\jplinux-webdev\mekka3\mekka3\mekka3_Local\folder\_vti_cnf\view.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-09\jplinux-webdev\mekka3\mekka3\mekka3_Local\images\help.gif
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-09\jplinux-webdev\mekka3\mekka3\mekka3_Local\images\HierExpand.gif
+Done processing: \\newnas\z-wayback\data\asof-2025-09 -> \\newnas\z-wayback\data\asof-2025-09
+Elapsed: 11 Seconds (00H:00M:11S)
+
+Start processing: \\newnas\z-wayback\data\asof-2025-10 -> \\newnas\z-wayback\data\asof-2025-10
+Done processing: \\newnas\z-wayback\data\asof-2025-10 -> \\newnas\z-wayback\data\asof-2025-10
+Elapsed: 11 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\data\asof-2025-11 -> \\newnas\z-wayback\data\asof-2025-11
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-11\jplinux-webdev\mekka3\mekka3\mekka3_Local\images\banner.gif
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-11\jplinux-webdev\mekka3\mekka3\mekka3_Local\common\_vti_cnf\util_form_search.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-11\jplinux-webdev\mekka3\mekka3\mekka3_Local\common\_vti_cnf\util_sec.asp.base
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\data\asof-2025-11\jplinux-webdev\mekka3\mekka3\mekka3_Local\common\_vti_cnf\util_js.js.base
+Done processing: \\newnas\z-wayback\data\asof-2025-11 -> \\newnas\z-wayback\data\asof-2025-11
+Elapsed: 11 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\data\asof-2025-12 -> \\newnas\z-wayback\data\asof-2025-12
+Done processing: \\newnas\z-wayback\data\asof-2025-12 -> \\newnas\z-wayback\data\asof-2025-12
+Elapsed: 10 Seconds (00H:00M:10S)
+
+Start processing: \\newnas\z-wayback\media\m-2018-03-15 -> \\newnas\z-wayback\media\m-2018-03-15
+Done processing: \\newnas\z-wayback\media\m-2018-03-15 -> \\newnas\z-wayback\media\m-2018-03-15
+Elapsed: 13 Seconds (00H:00M:13S)
+
+Start processing: \\newnas\z-wayback\media\m-2019-06-09 -> \\newnas\z-wayback\media\m-2019-06-09
+Done processing: \\newnas\z-wayback\media\m-2019-06-09 -> \\newnas\z-wayback\media\m-2019-06-09
+Elapsed: 14 Seconds (00H:00M:13S)
+
+Start processing: \\newnas\z-wayback\media\m-2019-07-25 -> \\newnas\z-wayback\media\m-2019-07-25
+Done processing: \\newnas\z-wayback\media\m-2019-07-25 -> \\newnas\z-wayback\media\m-2019-07-25
+Elapsed: 15 Seconds (00H:00M:14S)
+
+Start processing: \\newnas\z-wayback\media\m-2020-04-30 -> \\newnas\z-wayback\media\m-2020-04-30
+Done processing: \\newnas\z-wayback\media\m-2020-04-30 -> \\newnas\z-wayback\media\m-2020-04-30
+Elapsed: 14 Seconds (00H:00M:13S)
+
+Start processing: \\newnas\z-wayback\media\asof-2020-12 -> \\newnas\z-wayback\media\asof-2020-12
+Elapsed: 31 Seconds (00H:00M:30S)
+
+Start processing: \\newnas\z-wayback\media\asof-2022-12 -> \\newnas\z-wayback\media\asof-2022-12
+Done processing: \\newnas\z-wayback\media\asof-2022-12 -> \\newnas\z-wayback\media\asof-2022-12
+Elapsed: 15 Seconds (00H:00M:15S)
+
+Start processing: \\newnas\z-wayback\media\asof-2023-12 -> \\newnas\z-wayback\media\asof-2023-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\media\asof-2023-12\music\_sleep\Cafe De Anatolia - Ethno Deep Summer Mix.m4a
+Done processing: \\newnas\z-wayback\media\asof-2023-12 -> \\newnas\z-wayback\media\asof-2023-12
+Elapsed: 14 Seconds (00H:00M:14S)
+
+Start processing: \\newnas\z-wayback\media\asof-2024-12 -> \\newnas\z-wayback\media\asof-2024-12
+Done processing: \\newnas\z-wayback\media\asof-2024-12 -> \\newnas\z-wayback\media\asof-2024-12
+Elapsed: 21 Seconds (00H:00M:20S)
+
+Start processing: \\newnas\z-wayback\media\asof-2025-03 -> \\newnas\z-wayback\media\asof-2025-03
+Done processing: \\newnas\z-wayback\media\asof-2025-03 -> \\newnas\z-wayback\media\asof-2025-03
+Elapsed: 14 Seconds (00H:00M:14S)
+
+Start processing: \\newnas\z-wayback\media\asof-2025-06 -> \\newnas\z-wayback\media\asof-2025-06
+Done processing: \\newnas\z-wayback\media\asof-2025-06 -> \\newnas\z-wayback\media\asof-2025-06
+Elapsed: 14 Seconds (00H:00M:13S)
+
+Start processing: \\newnas\z-wayback\media\asof-2025-09 -> \\newnas\z-wayback\media\asof-2025-09
+Done processing: \\newnas\z-wayback\media\asof-2025-09 -> \\newnas\z-wayback\media\asof-2025-09
+Elapsed: 15 Seconds (00H:00M:15S)
+
+Start processing: \\newnas\z-wayback\media\asof-2025-10 -> \\newnas\z-wayback\media\asof-2025-10
+Done processing: \\newnas\z-wayback\media\asof-2025-10 -> \\newnas\z-wayback\media\asof-2025-10
+Elapsed: 15 Seconds (00H:00M:14S)
+
+Start processing: \\newnas\z-wayback\media\asof-2025-11 -> \\newnas\z-wayback\media\asof-2025-11
+Done processing: \\newnas\z-wayback\media\asof-2025-11 -> \\newnas\z-wayback\media\asof-2025-11
+Elapsed: 17 Seconds (00H:00M:16S)
+
+Start processing: \\newnas\z-wayback\media\asof-2025-12 -> \\newnas\z-wayback\media\asof-2025-12
+Done processing: \\newnas\z-wayback\media\asof-2025-12 -> \\newnas\z-wayback\media\asof-2025-12
+Elapsed: 16 Seconds (00H:00M:15S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2020-12 -> \\newnas\z-wayback\photo\asof-2020-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2020-12\pictures\photo (old)\tmb.lst
+Done processing: \\newnas\z-wayback\photo\asof-2020-12 -> \\newnas\z-wayback\photo\asof-2020-12
+Elapsed: 40 Seconds (00H:00M:40S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2022-12 -> \\newnas\z-wayback\photo\asof-2022-12
+Done processing: \\newnas\z-wayback\photo\asof-2022-12 -> \\newnas\z-wayback\photo\asof-2022-12
+Elapsed: 32 Seconds (00H:00M:32S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2023-12 -> \\newnas\z-wayback\photo\asof-2023-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2023-12\pictures\photo (old)\jen-ky-nude-bw-3.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2023-12\pictures\photo (old)\liberty.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2023-12\pictures\photo (old)\john-sundaycreek-98.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2023-12\pictures\photo (old)\maguirelett-pamela.bmp
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2023-12\pictures\photo (old)\maguirelett-pamela2.bmp
+Done processing: \\newnas\z-wayback\photo\asof-2023-12 -> \\newnas\z-wayback\photo\asof-2023-12
+Elapsed: 35 Seconds (00H:00M:34S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2024-12 -> \\newnas\z-wayback\photo\asof-2024-12
+Done processing: \\newnas\z-wayback\photo\asof-2024-12 -> \\newnas\z-wayback\photo\asof-2024-12
+Elapsed: 32 Seconds (00H:00M:32S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2025-03 -> \\newnas\z-wayback\photo\asof-2025-03
+Done processing: \\newnas\z-wayback\photo\asof-2025-03 -> \\newnas\z-wayback\photo\asof-2025-03
+Elapsed: 35 Seconds (00H:00M:34S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2025-06 -> \\newnas\z-wayback\photo\asof-2025-06
+Done processing: \\newnas\z-wayback\photo\asof-2025-06 -> \\newnas\z-wayback\photo\asof-2025-06
+Elapsed: 33 Seconds (00H:00M:33S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2025-09 -> \\newnas\z-wayback\photo\asof-2025-09
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-09\pictures\photo (old)\maguirelett-pamela3.jpg
+Done processing: \\newnas\z-wayback\photo\asof-2025-09 -> \\newnas\z-wayback\photo\asof-2025-09
+Elapsed: 32 Seconds (00H:00M:31S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2025-10 -> \\newnas\z-wayback\photo\asof-2025-10
+Done processing: \\newnas\z-wayback\photo\asof-2025-10 -> \\newnas\z-wayback\photo\asof-2025-10
+Elapsed: 33 Seconds (00H:00M:32S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2025-11 -> \\newnas\z-wayback\photo\asof-2025-11
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-11\pictures\photo (old)\nyc blue sunset 20mm 748x595.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-11\pictures\photo (old)\chantal2.jpg
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-11\pictures\photo (old)\wargo old piano.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-11\pictures\photo (old)\maguirelett-pamela2.bmp
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-11\pictures\photo (old)\talon snow.JPG
+Done processing: \\newnas\z-wayback\photo\asof-2025-11 -> \\newnas\z-wayback\photo\asof-2025-11
+Elapsed: 40 Seconds (00H:00M:40S)
+
+Start processing: \\newnas\z-wayback\photo\asof-2025-12 -> \\newnas\z-wayback\photo\asof-2025-12
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-12\pictures\photo (old)\montauk 8x10 print 984x645.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-12\pictures\photo (old)\raquel-bw-3.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-12\pictures\photo (old)\tequiza.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-12\pictures\photo (old)\metrocard.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-12\pictures\photo (old)\montauk 8x10 print.JPG
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-12\pictures\photo (old)\maguirelett-pamela3.bmp
+FILE NOT COPIED DUE TO ERROR: \\newnas\z-wayback\photo\asof-2025-12\pictures\photo (old)\tmb.ind
+Done processing: \\newnas\z-wayback\photo\asof-2025-12 -> \\newnas\z-wayback\photo\asof-2025-12
+Elapsed: 31 Seconds (00H:00M:31S)
+
+Start processing: \\newnas\z-wayback\download -> \\newnas\z-wayback\download
+Done processing: \\newnas\z-wayback\download -> \\newnas\z-wayback\download
+Elapsed: 29 Seconds (00H:00M:28S)
+
+TOTAL ELAPSED: 5,422 Seconds (01H:30M:22S)
+
+C:\Users\john>

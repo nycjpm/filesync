@@ -26,4 +26,10 @@ D:\filesync\filesync\filesync\obj\Debug\filesync.pdb
 \\ds1019\code\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.exe
 \\ds1019\code\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.pdb
 \\ds1019\code\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.csproj.AssemblyReference.cache
-\\ds1019\code\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.csproj.SuggestedBindingRedirects.cache
+C:\_scratch\___filesync\filesync-cs-code\filesync\bin\Debug\filesync.exe.config
+C:\_scratch\___filesync\filesync-cs-code\filesync\bin\Debug\filesync.exe
+C:\_scratch\___filesync\filesync-cs-code\filesync\bin\Debug\filesync.pdb
+C:\_scratch\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.csproj.AssemblyReference.cache
+C:\_scratch\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.csproj.CoreCompileInputs.cache
+C:\_scratch\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.exe
+C:\_scratch\___filesync\filesync-cs-code\filesync\obj\Debug\filesync.pdb

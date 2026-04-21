@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace filesync
 {
+    // xxx 
+
     public class Mapping
     {
         public string fromPath { get; set; }
@@ -31,12 +33,23 @@ namespace filesync
 
         public static void SyncFolder(Mapping mapping, Dictionary<string, string> options)
         {
+            // threads options from command line
+            var paralleloptions = new ParallelOptions { };
+            if (options.ContainsKey("threads"))
+            {
+                var n = int.Parse(options["threads"]);
+                paralleloptions.MaxDegreeOfParallelism = n;
+            }
+
             // need MERGE code for files and folers
+
+            // need COMPARE ONLY mode
 
             // create target if not exists
             Util.ValidatePath(mapping.toPath, true);
 
             string[] rawf;
+
 
             try
             {
@@ -66,7 +79,7 @@ namespace filesync
             var deletedfolders = tofolders.Select(f => f.ToLowerInvariant()).Except(fromfolders.Select(f => f.ToLowerInvariant())).ToList();
             if (deletedfolders.Any())
             {
-                Parallel.ForEach(deletedfolders, f => DeleteFolder(mapping.toPath + '\\' + f, options));
+                Parallel.ForEach(deletedfolders, paralleloptions, f => DeleteFolder(mapping.toPath + '\\' + f, options));
                 // foreach (var f in deletedfolders) DeleteFolder(to + '\\' + f, options);
             }
 
@@ -84,14 +97,14 @@ namespace filesync
             var deletedfiles = tofiles.Select(f => f.ToLowerInvariant()).Except(fromfiles.Select(f => f.ToLowerInvariant())).ToList();
             if (deletedfiles.Any())
             {
-                Parallel.ForEach(deletedfiles, f => DeleteFile(mapping.toPath + '\\' + f, options));
+                Parallel.ForEach(deletedfiles, paralleloptions, f => DeleteFile(mapping.toPath + '\\' + f, options));
                 // foreach (var f in deletedfiles) DeleteFile(mapping.toPath + '\\' + f, options);
             }
 
             //
             // sync FILES
             //
-            Parallel.ForEach(fromfiles, f => SyncFile(mapping.fromPath + '\\' + f, mapping.toPath + '\\' + f, options));
+            Parallel.ForEach(fromfiles, paralleloptions, f => SyncFile(mapping.fromPath + '\\' + f, mapping.toPath + '\\' + f, options));
             // foreach (var f in fromfiles) SyncFile(mapping.fromPath + '\\' + f, mapping.toPath + '\\' + f, options);
 
             //
@@ -112,8 +125,25 @@ namespace filesync
             else
             {
                 // not hashing, go full parallel
-                Parallel.ForEach(childmaps, m => SyncFolder(m, options));
+                Parallel.ForEach(childmaps, paralleloptions, m => SyncFolder(m, options));
             }
+
+            // set folder timestamps
+            try
+            {
+                var fromDir = new DirectoryInfo(mapping.fromPath);
+                var toDir = new DirectoryInfo(mapping.toPath);
+                if (Math.Abs((fromDir.LastWriteTimeUtc - toDir.LastWriteTimeUtc).TotalSeconds) > 5)
+                {
+                    toDir.LastWriteTimeUtc = fromDir.LastWriteTimeUtc;
+                    if (options.ContainsKey("echo") && options["echo"].Split(',').Contains("w"))
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
+                        Console.WriteLine($"folder timestamp updated {fromDir.LastWriteTimeUtc.ToString()}: " + mapping.toPath);
+                    }
+                }
+            }
+            catch { } // non-fatal, best effort
         }
 
         public static void DeleteFolder(string to, Dictionary<string, string> options)
@@ -238,10 +268,10 @@ namespace filesync
                 var fit = new FileInfo(to);
 
                 //
-                // FAT and exFAT have 2s granularity on Modified dates.  Therefore, need to allow +/- 3s in comparisons.
+                // FAT and exFAT have 2s granularity on Modified dates.  Therefore, need to allow +/- 5s in comparisons.
                 // https://superuser.com/questions/1685706/timestamp-changes-when-copying-file-to-exfat-drive
                 //
-                var different = fif.Length != fit.Length || Math.Abs((fif.LastWriteTime - fit.LastWriteTime).TotalSeconds) > 4;
+                var different = fif.Length != fit.Length || Math.Abs((fif.LastWriteTimeUtc - fit.LastWriteTimeUtc).TotalSeconds) > 5;
 
                 if (!different)
                 {
@@ -273,6 +303,10 @@ namespace filesync
             double retryms = 5;
             while (retryms < 15000)
             {
+                // if not retrying then suppress filesystem errors, dont sleep and dont retry
+                if (options["retries"] != "on")
+                    retryms = 15000;
+
                 try
                 {
                     File.Copy(from, to, true);
@@ -292,6 +326,10 @@ namespace filesync
 
                     if (retryms < 15000)
                     {
+                        // make sure target didnt fail because of readonly bullshit
+                        if (File.Exists(to))
+                            File.SetAttributes(to, FileAttributes.Normal);
+
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine($"error copying file: {to}, retrying in {retryms:#,###} ms");
                         Console.WriteLine($"    {ex.Message}");
@@ -300,8 +338,8 @@ namespace filesync
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"FILE NOT COPIED DUE TO ERROR: {to} ");
-                        Console.WriteLine($"    {ex.Message}");
+                        Console.WriteLine($"FILE NOT COPIED DUE TO ERROR: {from} ");
+                        // Console.WriteLine($"    {ex.Message}");
                         return;
                     }
                 }

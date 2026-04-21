@@ -1,0 +1,9 @@
+# format:  FROM PATH -> TO PATH -> option:val option:val (token is " -> ")
+
+# THIS DOES NOT WORK DUE TO DRIVE ROOT MAPPING WONKERY.
+# WILL WORK IF EACH FOLDER IS ENUMERATED AS A MAPPING.
+#
+# WEIRD.
+#
+
+\\ds1019\media\music\_mixes -> d:\

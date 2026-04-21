@@ -1,0 +1,6 @@
+
+c:\_scratch\___filesync\filesync threads:4 manifest:c:\_scratch\___filesync\migrate.txt
+
+
+c:\_scratch\___filesync\filesync threads:8 retries:off manifest:c:\_scratch\___filesync\validate.txt
+

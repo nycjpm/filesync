@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>filesync</RootNamespace>
     <AssemblyName>filesync</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -48,7 +48,7 @@
     <Compile Include="Shell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util.cs" />
-    <Compile Include="Wayback.cs" />
+    <Compile Include="WaybackRecover.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

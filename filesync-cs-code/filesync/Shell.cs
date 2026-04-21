@@ -9,11 +9,13 @@ using System.Runtime.InteropServices;
 
 namespace filesync
 {
+    // xxx
+
     class Shell
     {
         static Dictionary<string, string> inputoptions;
 
-        static HashSet<string> validOptions = new HashSet<string>("from,to,hash,echo,prompt,op,manifest".Split(','));
+        static HashSet<string> validOptions = new HashSet<string>("from,to,hash,echo,prompt,op,manifest,threads,retries".Split(','));
 
         //static string slug = "asof-";
 
@@ -90,10 +92,17 @@ namespace filesync
                 inputoptions["slug"] = "asof-";
             }
 
+            if (!inputoptions.ContainsKey("retries"))
+            {
+                inputoptions["retries"] = "on";
+            }
+
             // conform case and trim
             inputoptions["hash"] = inputoptions["hash"].ToLower().Trim();
             inputoptions["prompt"] = inputoptions["prompt"].ToLower().Trim();
             inputoptions["echo"] = inputoptions["echo"].ToLower().Trim();
+            inputoptions["retries"] = inputoptions["retries"].ToLower().Trim();
+         
 
             //
             // README
@@ -115,6 +124,18 @@ namespace filesync
             }
 
             var maps = new List<Mapping>();
+
+            if (inputoptions["op"] == "waybackrecover")
+            {
+                if (!inputoptions.ContainsKey("manifest"))
+                {
+                    Console.WriteLine($"MANIFEST REQUIRED for op:waybackrecover");
+                    return;
+                }
+                
+                WaybackRecover.ProcessManifest(inputoptions["manifest"], inputoptions);
+                return;
+            }
 
             if (!inputoptions.ContainsKey("manifest"))
             {
