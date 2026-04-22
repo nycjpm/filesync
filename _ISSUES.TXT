@@ -1,0 +1,33 @@
+VALIDATION
+
+The `folderdates` change is logically sound in the narrow sense you intended. You added `folderdates` to `validOptions`, you default it to `on`, you normalize it to lowercase/trim, you document it in the README, and in `Filesync.SyncFolder` you now gate the destination folder timestamp write behind `if (options["folderdates"] == "on")`. That means the change is wired end to end, command line to behavior to documentation, and the dedicated `op:fixfolderdates` path remains independent, which is exactly what you wanted.
+
+That said, a full logic review says the new change is good, but the surrounding code still has landmines, and one or two of them now matter more because you’re actively tuning behavior.
+
+The `folderdates` implementation itself does what it claims. With `folderdates:off`, normal sync still copies, deletes, recurses, and hashes exactly as before, it just skips the final `LastWriteTimeUtc` reconciliation on each destination folder. With `folderdates:on`, behavior is unchanged from your previous baseline. That part is clean. The logging is also correct, because the timestamp log line only appears when `folderdates:on` and the timestamp actually differs by more than 5 seconds. 
+
+The first real bug is not in the new feature, it’s in `Shell.Main`, and it still exists untouched. You do this early:
+
+`if (!inputoptions.ContainsKey("from") || !inputoptions.ContainsKey("to")) { if (!inputoptions.ContainsKey("manifest") && inputoptions["op"] != "fixfolderdates") ... }`
+
+That dereferences `inputoptions["op"]` before you assign the default `op:sync`. So if someone runs the program without `from`, without `to`, without `manifest`, and without `op`, you can throw a `KeyNotFoundException` before you ever reach your defaults. That is a pre-existing logic flaw, not introduced by `folderdates`, but it is still there and should be fixed by changing the condition to use `ContainsKey("op")` or by assigning defaults before any logic that reads `op`. 
+
+The second bug is also pre-existing, but it matters because your README keeps advertising features your parser will reject. `validOptions` includes `from,to,hash,echo,prompt,op,manifest,threads,retries,write,folderdates`, but your code still reads defaults for `retain`, `versions`, and `slug`, and your README still documents `retain:` and `slug:`. A user can supply `retain:m3,q4,y10` or `slug:asof-` exactly as documented and your validator will reject them as invalid options before execution. That is a hard logic mismatch between parser and README. Either add `retain`, `slug`, and probably `versions` to `validOptions`, or stop documenting them. Right now the code and docs disagree.
+
+Third, your README has a typo in the new option name: `folderdates::[on|off]` with a double colon. That is minor, but it matters because this is exactly the kind of thing that creates fake parser errors later when someone copy-pastes. The prose under it is directionally correct, but the punctuation is wrong. 
+
+Fourth, the wording in the README for `folderdates:on` is semantically right but grammatically mangled enough that it weakens trust. This sentence, “this fixes the issue with folder operations (create folder, create or delete files, or edit file metadata) sets the folder date to ‘now’,” should be rewritten. The logic is fine, the sentence is not. 
+
+Fifth, the core crash vector you hit earlier is still there. `Directory.GetDirectories(mapping.fromPath)` is wrapped in a try/catch, but `Directory.GetDirectories(mapping.toPath)`, `Directory.GetFiles(mapping.fromPath)`, and `Directory.GetFiles(mapping.toPath)` are still unprotected. So `folderdates:off` may reduce load, but it does not solve the fatal enumeration exception path. If an SMB timeout or semaphore timeout occurs in those unguarded calls, the whole recursive worker can still blow up. The new option helps isolate metadata pressure, but it does not harden the engine. 
+
+Sixth, the delete-before-copy design remains dangerous by construction. `SyncFolder` deletes folders and files present in `to` but absent in `from` before doing the file copy and before recursing. That is acceptable only when `from` is unquestionably authoritative and fully visible. If source enumeration is incomplete because of a transient share problem, you can delete valid target content based on a bad read. That is not caused by `folderdates`, but a full logic review has to call it out because your new tuning work is happening precisely in the environment where incomplete enumeration is plausible. 
+
+Seventh, the wayback branch mutates `map.toPath` in place inside the per-map loop. In practice that is probably fine because each mapping is processed once in a batch, but it does mean the `map` object is no longer pristine after the operation. If that object were ever reused, logged later, or passed elsewhere, it would now contain the date-appended path. Not a current production bug, but sloppy state mutation. 
+
+Eighth, the `folderdates` default of `on` is reasonable for backward compatibility, but it means your new “performance isolation” experiment requires the user to explicitly know the option exists. That’s fine, just be aware you did not actually change default runtime behavior at all. You added a bypass, not a new default mode. That is probably what you wanted, but it should be consciously understood.
+
+Ninth, the README statement that `op:fixfolderdates` is safe on a live share because it only modifies metadata is broadly true, but operationally incomplete. It is safe in the sense that it does not touch file content, but it can still generate a lot of metadata churn on NAS-backed shares. Given your recent experience, you may want to say that explicitly so future-you does not mistake “safe” for “free.”
+
+So the verdict is this. The `folderdates` feature itself is implemented correctly and cleanly. It does what you intended, and it does not appear to introduce any new logical break in the sync path.  But the review also says you still have three serious correctness issues outside that change: early `op` access before defaults, invalid-option mismatch with documented `retain` and `slug`, and fatal unhandled directory/file enumeration on network shares.
+
+If you want the short operational answer, it is this: the `folderdates` change is valid. Ship it. But do not confuse “valid feature” with “fully hardened run path.” The next thing worth fixing is not the feature. It is the parser mismatch and the unguarded enumeration calls.

@@ -129,19 +129,22 @@ namespace filesync
             // set folder timestamps
             try
             {
-                var fromDir = new DirectoryInfo(mapping.fromPath);
-                var toDir = new DirectoryInfo(mapping.toPath);
-                if (Math.Abs((fromDir.LastWriteTimeUtc - toDir.LastWriteTimeUtc).TotalSeconds) > 5)
+                if (options["folderdates"] == "on")
                 {
-                    if (options["write"] == "on")
+                    var fromDir = new DirectoryInfo(mapping.fromPath);
+                    var toDir = new DirectoryInfo(mapping.toPath);
+                    if (Math.Abs((fromDir.LastWriteTimeUtc - toDir.LastWriteTimeUtc).TotalSeconds) > 5)
                     {
-                        toDir.LastWriteTimeUtc = fromDir.LastWriteTimeUtc;
-                    }
+                        if (options["write"] == "on")
+                        {
+                            toDir.LastWriteTimeUtc = fromDir.LastWriteTimeUtc;
+                        }
 
-                    if (options.ContainsKey("echo") && options["echo"].Split(',').Contains("w"))
-                    {
-                        Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine($"folder timestamp {proformaTag} updated {fromDir.LastWriteTimeUtc.ToString()}: " + mapping.toPath);
+                        if (options.ContainsKey("echo") && options["echo"].Split(',').Contains("w"))
+                        {
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            Console.WriteLine($"folder timestamp {proformaTag} updated {fromDir.LastWriteTimeUtc.ToString()}: " + mapping.toPath);
+                        }
                     }
                 }
             }

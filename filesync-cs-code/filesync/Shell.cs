@@ -12,7 +12,7 @@ namespace filesync
     {
         static Dictionary<string, string> inputoptions;
 
-        static HashSet<string> validOptions = new HashSet<string>("from,to,hash,echo,prompt,op,manifest,threads,retries,write".Split(','));
+        static HashSet<string> validOptions = new HashSet<string>("from,to,hash,echo,prompt,op,manifest,threads,retries,write,folderdates".Split(','));
 
         //static string slug = "asof-";
 
@@ -99,12 +99,18 @@ namespace filesync
                 inputoptions["write"] = "off";
             }
 
+            if (!inputoptions.ContainsKey("folderdates"))
+            {
+                inputoptions["folderdates"] = "on";
+            }
+
             // conform case and trim
             inputoptions["hash"] = inputoptions["hash"].ToLower().Trim();
             inputoptions["prompt"] = inputoptions["prompt"].ToLower().Trim();
             inputoptions["echo"] = inputoptions["echo"].ToLower().Trim();
             inputoptions["retries"] = inputoptions["retries"].ToLower().Trim();
             inputoptions["write"] = inputoptions["write"].ToLower().Trim();
+            inputoptions["folderdates"] = inputoptions["folderdates"].ToLower().Trim();
 
 
             //

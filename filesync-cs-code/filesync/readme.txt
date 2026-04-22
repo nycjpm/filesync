@@ -96,6 +96,13 @@ threads:n
     DEFAULT=unrestricted (system default)
     Example: threads:8
 
+folderdates:[on|off]
+    on (DEFAULT) - sync forces To: folder modified dates to match From: folder modified 
+        dates this addresses the issue where folder operations (create folder, create or 
+        delete files, or edit file metadata) set the folder date to "now". When syncing 
+        data the folder modified dates are deemed owned by the source, not the target.
+    off - does not force To: folder modified dates.
+    
 retries:[on|off]
     on (DEFAULT) - retry failed file copies with exponential backoff up to 15 seconds.
         Also clears read-only attributes on destination before retry.
@@ -185,7 +192,9 @@ Conform folder dates to actual file content dates:
 
 - op:fixfolderdates only sets the modified (LastWriteTime) date on folders. Creation 
   dates are not set because File.Copy always stamps the destination with the copy date, 
-  making creation dates meaningless after any migration or restore operation.
+  making creation dates meaningless after any migration or restore operation. because
+  op:fixfolderdates exists purely to calculate modified dates for folders, the 
+  folderdates:on|off option does not apply.
 
 - op:fixfolderdates is idempotent - running it multiple times produces the same result.
   It is safe to run on a live share as it only modifies folder metadata, not file content.

@@ -4,3 +4,7 @@ c:\_scratch\___filesync\filesync threads:4 manifest:c:\_scratch\___filesync\migr
 
 c:\_scratch\___filesync\filesync threads:8 retries:off manifest:c:\_scratch\___filesync\validate.txt
 
+
+
+
+\\ds1525\code\___filesync\filesync threads:4 folderdates:off write:on manifest:\\ds1525\code\___filesync\sync-oldnas.txt
