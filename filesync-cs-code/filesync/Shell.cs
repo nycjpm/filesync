@@ -327,14 +327,14 @@ namespace filesync
                 var et = mwatch.Elapsed;
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine($"Done processing: {map}");
-                Console.WriteLine($"Elapsed: {et.TotalSeconds:#,###} Seconds ({et.Hours:0#}H:{et.Minutes:0#}M:{et.Seconds:0#}S)");
+                Console.WriteLine($"Elapsed: {et.TotalSeconds:#,###} Seconds ({et.Hours:0#}H:{et.Minutes:0#}M:{et.Seconds:0#}S) {Filesync.tss()}");
             }
 
             // batch timings
             var bt = bwatch.Elapsed;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(string.Empty);
-            Console.WriteLine($"TOTAL ELAPSED: {bt.TotalSeconds:#,###} Seconds ({bt.Hours:0#}H:{bt.Minutes:0#}M:{bt.Seconds:0#}S)");
+            Console.WriteLine($"TOTAL ELAPSED: {bt.TotalSeconds:#,###} Seconds ({bt.Hours:0#}H:{bt.Minutes:0#}M:{bt.Seconds:0#}S) {Filesync.tss()}");
 
             if (inputoptions["prompt"] == "true")
             {
