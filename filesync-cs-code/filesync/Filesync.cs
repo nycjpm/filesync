@@ -56,7 +56,7 @@ namespace filesync
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("error: " + ex.Message);
+                Console.WriteLine($"error: {ex.Message} {tss()}");
                 return;
             }
 
@@ -143,12 +143,19 @@ namespace filesync
                         if (options.ContainsKey("echo") && options["echo"].Split(',').Contains("w"))
                         {
                             Console.ForegroundColor = ConsoleColor.DarkYellow;
-                            Console.WriteLine($"folder timestamp {proformaTag} updated {fromDir.LastWriteTimeUtc.ToString()}: " + mapping.toPath);
+                            Console.WriteLine($"folder timestamp {proformaTag} updated {fromDir.LastWriteTimeUtc.ToString()}: {mapping.toPath} {tss()}");
                         }
                     }
                 }
             }
             catch { } // non-fatal, best effort
+        }
+
+        // timestamps for messages
+        public static string tss()
+        {
+
+            return $"(@{DateTime.Now.ToString("HH:mm:ss")})";
         }
 
         public static void DeleteFolder(string to, Dictionary<string, string> options)
@@ -166,7 +173,7 @@ namespace filesync
             if (echowrite)
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine($"{proformaTag} deleted folder: " + to);
+                Console.WriteLine($"{proformaTag} deleted folder: {to} {tss()}");
             }
 
             double retryms = 5;
@@ -192,14 +199,14 @@ namespace filesync
                     if (retryms < 15000)
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine($"error deleting folder: {to}, retrying in {retryms:#,###} ms");
+                        Console.WriteLine($"error deleting folder: {to}, retrying in {retryms:#,###} ms {tss()}");
                         Console.WriteLine($"    {ex.Message}");
                         System.Threading.Thread.Sleep((int)retryms);
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"FOLDER NOT DELETED DUE TO ERROR: {to} ");
+                        Console.WriteLine($"FOLDER NOT DELETED DUE TO ERROR: {to} {tss()}");
                         Console.WriteLine($"    {ex.Message}");
                         return;
                     }
@@ -246,14 +253,14 @@ namespace filesync
                     if (retryms < 15000)
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine($"error deleting file: {to}, retrying in {retryms:#,###} ms");
+                        Console.WriteLine($"error deleting file: {to}, retrying in {retryms:#,###} ms {tss()}");
                         Console.WriteLine($"    {ex.Message}");
                         System.Threading.Thread.Sleep((int)retryms);
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"FILE NOT DELETED DUE TO ERROR: {to} ");
+                        Console.WriteLine($"FILE NOT DELETED DUE TO ERROR: {to} {tss()}");
                         Console.WriteLine($"    {ex.Message}");
                         return;
                     }
@@ -299,7 +306,7 @@ namespace filesync
                         if (echoskip)
                         {
                             Console.ForegroundColor = ConsoleColor.Gray;
-                            Console.WriteLine("nohash exists (skipped): " + to + " (" + t.Elapsed.TotalMilliseconds.ToString("0") + " ms)");
+                            Console.WriteLine($"nohash exists (skipped): {to} ({t.Elapsed.TotalMilliseconds.ToString("0")} ms) {tss()}");
                         }
                         return;
                     }
@@ -312,7 +319,7 @@ namespace filesync
                         if (echoskip)
                         {
                             Console.ForegroundColor = ConsoleColor.Gray;
-                            Console.WriteLine("hash match (skipped): " + to + " (" + t.Elapsed.TotalMilliseconds.ToString("0") + " ms)");
+                            Console.WriteLine($"hash match (skipped): {to} ({t.Elapsed.TotalMilliseconds.ToString("0")} ms) {tss()}");
                         }
                         return;
                     }
@@ -336,7 +343,7 @@ namespace filesync
                     if (echowrite)
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine((missing ? $"{proformaTag} copied: " : $"{proformaTag} replaced: ") + to + " (" + t.Elapsed.TotalMilliseconds.ToString("0") + " ms)");
+                        Console.WriteLine((missing ? $"{proformaTag} copied: " : $"{proformaTag} replaced: ") + $"{to} ({t.Elapsed.TotalMilliseconds.ToString("0")} ms) {tss()}");
                     }
 
                     return;
@@ -354,14 +361,14 @@ namespace filesync
                             File.SetAttributes(to, FileAttributes.Normal);
 
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine($"error copying file: {to}, retrying in {retryms:#,###} ms");
+                        Console.WriteLine($"error copying file: {to}, retrying in {retryms:#,###} ms {tss()}");
                         Console.WriteLine($"    {ex.Message}");
                         System.Threading.Thread.Sleep((int)retryms);
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine($"FILE NOT COPIED DUE TO ERROR: {from} ");
+                        Console.WriteLine($"FILE NOT COPIED DUE TO ERROR: {from} {tss()}");
                         // Console.WriteLine($"    {ex.Message}");
                         return;
                     }
@@ -397,7 +404,7 @@ namespace filesync
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Error Hashing, returning empty hash for {fileName}: {ex.Message}");
+                Console.WriteLine($"Error Hashing, returning empty hash for {fileName}: {ex.Message} {tss()}");
                 return string.Empty;
             }
         }

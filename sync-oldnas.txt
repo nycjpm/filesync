@@ -1,67 +1,68 @@
 # format:  FROM PATH -> TO PATH -> option:val option:val (token is " -> ")
 
 # DATA - COPY FROM NAS TO NAS
-#\\ds1525\code -> \\oldnas\code
-#\\ds1525\data -> \\oldnas\data
-#\\ds1525\media -> \\oldnas\media
-#\\ds1525\photo -> \\oldnas\photo
-#\\ds1525\download -> \\oldnas\download
-#\\ds1525\video-source -> \\oldnas\video-source
-#\\ds1525\video-edit -> \\oldnas\video-edit
+#\\newnas\code -> \\oldnas\code
+#\\newnas\data -> \\oldnas\data
+#\\newnas\media -> \\oldnas\media
+#\\newnas\photo -> \\oldnas\photo
+#\\newnas\download -> \\oldnas\download
+#\\newnas\video-source -> \\oldnas\video-source
+#\\newnas\video-edit -> \\oldnas\video-edit
 
 # wayback
 
 # wayback in slices
 
-#\\ds1525\z-wayback\data\d-2018-03-15 -> \\oldnas\z-wayback\data\d-2018-03-15
-#\\ds1525\z-wayback\data\d-2019-06-09 -> \\oldnas\z-wayback\data\d-2019-06-09
-#\\ds1525\z-wayback\data\d-2019-07-25 -> \\oldnas\z-wayback\data\d-2019-07-25
-#\\ds1525\z-wayback\data\asof-2020-12 -> \\oldnas\z-wayback\data\asof-2020-12
-#\\ds1525\z-wayback\data\asof-2022-12 -> \\oldnas\z-wayback\data\asof-2022-12
-#\\ds1525\z-wayback\data\asof-2023-12 -> \\oldnas\z-wayback\data\asof-2023-12
-#\\ds1525\z-wayback\data\asof-2024-12 -> \\oldnas\z-wayback\data\asof-2024-12
-#\\ds1525\z-wayback\data\asof-2025-03 -> \\oldnas\z-wayback\data\asof-2025-03
-#\\ds1525\z-wayback\data\asof-2025-06 -> \\oldnas\z-wayback\data\asof-2025-06
-#\\ds1525\z-wayback\data\asof-2025-09 -> \\oldnas\z-wayback\data\asof-2025-09
-#\\ds1525\z-wayback\data\asof-2025-10 -> \\oldnas\z-wayback\data\asof-2025-10
-#\\ds1525\z-wayback\data\asof-2025-11 -> \\oldnas\z-wayback\data\asof-2025-11
-#\\ds1525\z-wayback\data\asof-2025-12 -> \\oldnas\z-wayback\data\asof-2025-12
+\\newnas\z-wayback\code\asof-2020-12 -> \\oldnas\z-wayback\code\asof-2020-12
+\\newnas\z-wayback\code\asof-2022-12 -> \\oldnas\z-wayback\code\asof-2022-12
+\\newnas\z-wayback\code\asof-2023-12 -> \\oldnas\z-wayback\code\asof-2023-12
+\\newnas\z-wayback\code\asof-2024-12 -> \\oldnas\z-wayback\code\asof-2024-12
+\\newnas\z-wayback\code\asof-2025-03 -> \\oldnas\z-wayback\code\asof-2025-03
+\\newnas\z-wayback\code\asof-2025-06 -> \\oldnas\z-wayback\code\asof-2025-06
+\\newnas\z-wayback\code\asof-2025-09 -> \\oldnas\z-wayback\code\asof-2025-09
+\\newnas\z-wayback\code\asof-2025-10 -> \\oldnas\z-wayback\code\asof-2025-10
+\\newnas\z-wayback\code\asof-2025-11 -> \\oldnas\z-wayback\code\asof-2025-11
+\\newnas\z-wayback\code\asof-2025-12 -> \\oldnas\z-wayback\code\asof-2025-12
 
-#\\ds1525\z-wayback\media\m-2018-03-15 -> \\oldnas\z-wayback\media\m-2018-03-15
-#\\ds1525\z-wayback\media\m-2019-06-09 -> \\oldnas\z-wayback\media\m-2019-06-09
-#\\ds1525\z-wayback\media\m-2019-07-25 -> \\oldnas\z-wayback\media\m-2019-07-25
-#\\ds1525\z-wayback\media\m-2020-04-30 -> \\oldnas\z-wayback\media\m-2020-04-30
-\\ds1525\z-wayback\media\asof-2020-12 -> \\oldnas\z-wayback\media\asof-2020-12
-\\ds1525\z-wayback\media\asof-2022-12 -> \\oldnas\z-wayback\media\asof-2022-12
-\\ds1525\z-wayback\media\asof-2023-12 -> \\oldnas\z-wayback\media\asof-2023-12
-\\ds1525\z-wayback\media\asof-2024-12 -> \\oldnas\z-wayback\media\asof-2024-12
-\\ds1525\z-wayback\media\asof-2025-03 -> \\oldnas\z-wayback\media\asof-2025-03
-\\ds1525\z-wayback\media\asof-2025-06 -> \\oldnas\z-wayback\media\asof-2025-06
-\\ds1525\z-wayback\media\asof-2025-09 -> \\oldnas\z-wayback\media\asof-2025-09
-\\ds1525\z-wayback\media\asof-2025-10 -> \\oldnas\z-wayback\media\asof-2025-10
-\\ds1525\z-wayback\media\asof-2025-11 -> \\oldnas\z-wayback\media\asof-2025-11
-\\ds1525\z-wayback\media\asof-2025-12 -> \\oldnas\z-wayback\media\asof-2025-12
+\\newnas\z-wayback\data\d-2018-03-15 -> \\oldnas\z-wayback\data\d-2018-03-15
+\\newnas\z-wayback\data\d-2019-06-09 -> \\oldnas\z-wayback\data\d-2019-06-09
+\\newnas\z-wayback\data\d-2019-07-25 -> \\oldnas\z-wayback\data\d-2019-07-25
+\\newnas\z-wayback\data\asof-2020-12 -> \\oldnas\z-wayback\data\asof-2020-12
+\\newnas\z-wayback\data\asof-2022-12 -> \\oldnas\z-wayback\data\asof-2022-12
+\\newnas\z-wayback\data\asof-2023-12 -> \\oldnas\z-wayback\data\asof-2023-12
+\\newnas\z-wayback\data\asof-2024-12 -> \\oldnas\z-wayback\data\asof-2024-12
+\\newnas\z-wayback\data\asof-2025-03 -> \\oldnas\z-wayback\data\asof-2025-03
+\\newnas\z-wayback\data\asof-2025-06 -> \\oldnas\z-wayback\data\asof-2025-06
+\\newnas\z-wayback\data\asof-2025-09 -> \\oldnas\z-wayback\data\asof-2025-09
+\\newnas\z-wayback\data\asof-2025-10 -> \\oldnas\z-wayback\data\asof-2025-10
+\\newnas\z-wayback\data\asof-2025-11 -> \\oldnas\z-wayback\data\asof-2025-11
+\\newnas\z-wayback\data\asof-2025-12 -> \\oldnas\z-wayback\data\asof-2025-12
 
-\\ds1525\z-wayback\photo\asof-2020-12 -> \\oldnas\z-wayback\photo\asof-2020-12
-\\ds1525\z-wayback\photo\asof-2022-12 -> \\oldnas\z-wayback\photo\asof-2022-12
-\\ds1525\z-wayback\photo\asof-2023-12 -> \\oldnas\z-wayback\photo\asof-2023-12
-\\ds1525\z-wayback\photo\asof-2024-12 -> \\oldnas\z-wayback\photo\asof-2024-12
-\\ds1525\z-wayback\photo\asof-2025-03 -> \\oldnas\z-wayback\photo\asof-2025-03
-\\ds1525\z-wayback\photo\asof-2025-06 -> \\oldnas\z-wayback\photo\asof-2025-06
-\\ds1525\z-wayback\photo\asof-2025-09 -> \\oldnas\z-wayback\photo\asof-2025-09
-\\ds1525\z-wayback\photo\asof-2025-10 -> \\oldnas\z-wayback\photo\asof-2025-10
-\\ds1525\z-wayback\photo\asof-2025-11 -> \\oldnas\z-wayback\photo\asof-2025-11
-\\ds1525\z-wayback\photo\asof-2025-12 -> \\oldnas\z-wayback\photo\asof-2025-12
+\\newnas\z-wayback\media\m-2018-03-15 -> \\oldnas\z-wayback\media\m-2018-03-15
+\\newnas\z-wayback\media\m-2019-06-09 -> \\oldnas\z-wayback\media\m-2019-06-09
+\\newnas\z-wayback\media\m-2019-07-25 -> \\oldnas\z-wayback\media\m-2019-07-25
+\\newnas\z-wayback\media\m-2020-04-30 -> \\oldnas\z-wayback\media\m-2020-04-30
+\\newnas\z-wayback\media\asof-2020-12 -> \\oldnas\z-wayback\media\asof-2020-12
+\\newnas\z-wayback\media\asof-2022-12 -> \\oldnas\z-wayback\media\asof-2022-12
+\\newnas\z-wayback\media\asof-2023-12 -> \\oldnas\z-wayback\media\asof-2023-12
+\\newnas\z-wayback\media\asof-2024-12 -> \\oldnas\z-wayback\media\asof-2024-12
+\\newnas\z-wayback\media\asof-2025-03 -> \\oldnas\z-wayback\media\asof-2025-03
+\\newnas\z-wayback\media\asof-2025-06 -> \\oldnas\z-wayback\media\asof-2025-06
+\\newnas\z-wayback\media\asof-2025-09 -> \\oldnas\z-wayback\media\asof-2025-09
+\\newnas\z-wayback\media\asof-2025-10 -> \\oldnas\z-wayback\media\asof-2025-10
+\\newnas\z-wayback\media\asof-2025-11 -> \\oldnas\z-wayback\media\asof-2025-11
+\\newnas\z-wayback\media\asof-2025-12 -> \\oldnas\z-wayback\media\asof-2025-12
 
-\\ds1525\z-wayback\download -> \\oldnas\z-wayback\download
+\\newnas\z-wayback\photo\asof-2020-12 -> \\oldnas\z-wayback\photo\asof-2020-12
+\\newnas\z-wayback\photo\asof-2022-12 -> \\oldnas\z-wayback\photo\asof-2022-12
+\\newnas\z-wayback\photo\asof-2023-12 -> \\oldnas\z-wayback\photo\asof-2023-12
+\\newnas\z-wayback\photo\asof-2024-12 -> \\oldnas\z-wayback\photo\asof-2024-12
+\\newnas\z-wayback\photo\asof-2025-03 -> \\oldnas\z-wayback\photo\asof-2025-03
+\\newnas\z-wayback\photo\asof-2025-06 -> \\oldnas\z-wayback\photo\asof-2025-06
+\\newnas\z-wayback\photo\asof-2025-09 -> \\oldnas\z-wayback\photo\asof-2025-09
+\\newnas\z-wayback\photo\asof-2025-10 -> \\oldnas\z-wayback\photo\asof-2025-10
+\\newnas\z-wayback\photo\asof-2025-11 -> \\oldnas\z-wayback\photo\asof-2025-11
+\\newnas\z-wayback\photo\asof-2025-12 -> \\oldnas\z-wayback\photo\asof-2025-12
 
-\\ds1525\z-wayback\code\asof-2020-12 -> \\oldnas\z-wayback\code\asof-2020-12
-\\ds1525\z-wayback\code\asof-2022-12 -> \\oldnas\z-wayback\code\asof-2022-12
-\\ds1525\z-wayback\code\asof-2023-12 -> \\oldnas\z-wayback\code\asof-2023-12
-\\ds1525\z-wayback\code\asof-2024-12 -> \\oldnas\z-wayback\code\asof-2024-12
-\\ds1525\z-wayback\code\asof-2025-03 -> \\oldnas\z-wayback\code\asof-2025-03
-\\ds1525\z-wayback\code\asof-2025-06 -> \\oldnas\z-wayback\code\asof-2025-06
-\\ds1525\z-wayback\code\asof-2025-09 -> \\oldnas\z-wayback\code\asof-2025-09
-\\ds1525\z-wayback\code\asof-2025-10 -> \\oldnas\z-wayback\code\asof-2025-10
-\\ds1525\z-wayback\code\asof-2025-11 -> \\oldnas\z-wayback\code\asof-2025-11
-\\ds1525\z-wayback\code\asof-2025-12 -> \\oldnas\z-wayback\code\asof-2025-12
+\\newnas\z-wayback\download -> \\oldnas\z-wayback\download
+

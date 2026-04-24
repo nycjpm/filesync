@@ -1,0 +1,68 @@
+# format:  FROM PATH -> TO PATH -> option:val option:val (token is " -> ")
+
+# INTERNAL (puggsley 7700x) 6TB MIRROR
+\\newnas\_synced -> m:\_synced
+\\newnas\data -> m:\data
+\\newnas\code -> m:\code
+\\newnas\media -> m:\media
+\\newnas\photo -> m:\photo
+\\newnas\download -> m:\download
+\\newnas\video-source -> m:\video-source
+\\newnas\video-edit -> m:\video-edit
+
+# EXTERNAL USB 5TB MIRROR FOR OFFSITE
+\\newnas\_synced -> g:\_synced
+\\newnas\data -> g:\data
+\\newnas\code -> g:\code
+\\newnas\media -> g:\media
+\\newnas\photo -> g:\photo
+\\newnas\download -> g:\download
+\\newnas\video-source -> g:\video-source
+\\newnas\video-edit -> g:\video-edit
+
+
+#
+# WAYBACK
+#
+
+# san wayback mirrors
+\\newnas\_synced -> \\newnas\z-wayback\_synced -> op:wayback echo:w
+\\newnas\data -> \\newnas\z-wayback\data -> op:wayback echo:w
+\\newnas\code -> \\newnas\z-wayback\code -> op:wayback echo:w
+\\newnas\media -> \\newnas\z-wayback\media -> op:wayback echo:w
+\\newnas\photo -> \\newnas\z-wayback\photo -> op:wayback echo:w
+\\newnas\download -> \\newnas\z-wayback\download -> op:wayback echo:w
+
+# wayback cleanups
+\\newnas\_synced -> \\newnas\z-wayback\_synced -> op:purge retain:m3,q4,y10
+\\newnas\data -> \\newnas\z-wayback\data -> op:purge retain:m3,q4,y10
+\\newnas\code -> \\newnas\z-wayback\code -> op:purge retain:m3,q4,y10
+\\newnas\media -> \\newnas\z-wayback\media -> op:purge retain:m3,q4,y10
+\\newnas\photo -> \\newnas\z-wayback\photo -> op:purge retain:m3,q4,y10
+\\newnas\download -> \\newnas\z-wayback\download -> op:purge retain:m3,q4,y10
+
+
+#
+# OLDNAS
+#
+
+#
+# newnas -> oldnas via Synology Drive + ShareSync
+# _synced, data, code, media, photo, download, video-source, video-edit
+#
+
+# oldnas redundant wayback
+\\newnas\_synced -> \\oldnas\z-wayback\_synced -> op:wayback echo:w
+\\newnas\data -> \\oldnas\z-wayback\data -> op:wayback echo:w
+\\newnas\code -> \\oldnas\z-wayback\code -> op:wayback echo:w
+\\newnas\media -> \\oldnas\z-wayback\media -> op:wayback echo:w
+\\newnas\photo -> \\oldnas\z-wayback\photo -> op:wayback echo:w
+\\newnas\download -> \\oldnas\z-wayback\download -> op:wayback echo:w
+
+# oldnas wayback cleanups
+\\newnas\_synced -> \\oldnas\z-wayback\_synced -> op:purge retain:m3,q4,y10
+\\newnas\data -> \\oldnas\z-wayback\data -> op:purge retain:m3,q4,y10
+\\newnas\code -> \\oldnas\z-wayback\code -> op:purge retain:m3,q4,y10
+\\newnas\media -> \\oldnas\z-wayback\media -> op:purge retain:m3,q4,y10
+\\newnas\photo -> \\oldnas\z-wayback\photo -> op:purge retain:m3,q4,y10
+\\newnas\download -> \\oldnas\z-wayback\download -> op:purge retain:m3,q4,y10
